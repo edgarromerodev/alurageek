@@ -1,0 +1,28 @@
+{
+  "productos": [
+    {
+      "id": "247b",
+      "imagen": "https://png.pngtree.com/png-clipart/20230417/original/pngtree-earphones-wireless-earphones-bluetooth-earphones-transparent-png-image_9062661.png",
+      "nombre": "Audifono Inalambrico",
+      "precio": "50"
+    },
+    {
+      "id": "af30",
+      "imagen": "https://static.vecteezy.com/system/resources/previews/013/396/329/non_2x/smart-watch-realistic-3d-png.png",
+      "nombre": "SmarthWatch",
+      "precio": "400"
+    },
+    {
+      "id": "29c4",
+      "imagen": "https://pngfre.com/wp-content/uploads/laptop-png-from-pngfre-3-1024x833.png",
+      "nombre": "Laptop",
+      "precio": "400"
+    },
+    {
+      "id": "024d",
+      "imagen": "https://www.freeiconspng.com/thumbs/television-tv-png/television-png-tv-22.png",
+      "nombre": "TV",
+      "precio": "300"
+    }
+  ]
+}

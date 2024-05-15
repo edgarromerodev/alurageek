@@ -1,0 +1,60 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alura Geek</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+  <header>
+    <h1>Alura Geek</h1>
+  </header>
+  <main>
+    <section id="productos">
+      <h2>Productos Geek</h2>
+      <div data-product   id="lista-productos">
+      </div>
+
+    </section>
+    <section id="formulario">
+      <div class="form-container">
+          <h2>Agregar Producto Geek</h2>
+          <form id="producto-form" data-form>
+              <label for="nombre">Nombre del Producto Geek:</label>
+              <input data-name type="text" id="nombre" required placeholder="Nombre...">
+              <div class="error-container" data-error-for="nombre"></div> <!-- Aquí se mostrará el mensaje de error para el nombre -->
+              
+              <label for="precio">Precio:</label>
+              <input data-price type="number" id="precio" required placeholder="Precio...">
+              <div class="error-container" data-error-for="precio"></div> <!-- Aquí se mostrará el mensaje de error para el precio -->
+              
+              <label for="imagen">URL de la Imagen:</label>
+              <input data-image type="url" id="imagen" required placeholder="URL de la imagen...">
+              <div class="error-container" data-error-for="imagen"></div> <!-- Aquí se mostrará el mensaje de error para la imagen -->
+  
+              <div class="btn-form">
+                  <button type="submit" id="agregar">Agregar</button>
+                  <button type="button" id="limpiar">Limpiar</button>
+              </div>
+          </form>
+      </div>
+  </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2024 Alura Geek. Todos los derechos reservados.</p>
+      <ul class="social-links">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script type="module" src="js/controllers/main.js"></script>
+</body>
+</html>
