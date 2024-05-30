@@ -172,17 +172,23 @@ body {
     color: #fff;
     text-decoration: none;
   }
+
   @media screen and (max-width: 768px) {
     main {
       flex-direction: column; 
     }
   
     #productos, #formulario {
+      order: 2; /* Cambia el orden en dispositivos móviles */
       flex: 1; 
     }
-
+  
+    #formulario {
+      order: 1; /* Mueve el formulario arriba */
+    }
+  
     #lista-productos {
-        max-height: none; 
-        overflow-y: visible; 
-      }
+      max-height: none; 
+      overflow-y: visible; 
+    }
   }
