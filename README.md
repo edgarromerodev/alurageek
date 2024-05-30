@@ -11,4 +11,4 @@ Interfaz de usuario amigable: La interfaz de usuario está diseñada para ser f�
 Manejo de solicitudes HTTP con Fetch y async/await: La aplicación utiliza Fetch y async/await para realizar solicitudes HTTP asíncronas al servidor JSON y gestionar las respuestas de manera eficiente. Esto garantiza una experiencia fluida para los usuarios, incluso cuando se realizan múltiples operaciones simultáneamente.
 
 Implementación 🌐
-El proyecto ha sido desplegado en Vercel y está disponible en línea en el siguiente enlace: AluraGeek - Gestor de Productos.
+El proyecto ha sido desplegado en Vercel y está disponible en línea en el siguiente enlace: https://alurageek-nine.vercel.app
