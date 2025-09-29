@@ -11,50 +11,86 @@
 </head>
 <body>
   <header>
-    <h1>Alura Geek</h1>
+    <div class="header-container">
+      <div class="logo">
+        <i class="fas fa-graduation-cap logo-icon"></i>
+        <h1>Edukuk</h1>
+      </div>
+      <p class="tagline">Tu tienda geek de confianza</p>
+    </div>
   </header>
+  
   <main>
     <section id="productos">
-      <h2>Productos Geek</h2>
-      <div data-product   id="lista-productos">
+      <h2 class="section-title">Productos Destacados</h2>
+      <div data-product id="lista-productos" class="products-grid">
+        <!-- Loading state -->
+        <div class="loading">
+          <div class="spinner"></div>
+          <p>Cargando productos...</p>
+        </div>
       </div>
-
     </section>
+    
     <section id="formulario">
       <div class="form-container">
-          <h2>Agregar Producto Geek</h2>
-          <form id="producto-form" data-form>
-              <label for="nombre">Nombre del Producto Geek:</label>
-              <input data-name type="text" id="nombre" required placeholder="Nombre...">
-              <div class="error-container" data-error-for="nombre"></div> <!-- Aquí se mostrará el mensaje de error para el nombre -->
-              
-              <label for="precio">Precio:</label>
-              <input data-price type="number" id="precio" required placeholder="Precio...">
-              
-              
-              <label for="imagen">URL de la Imagen:</label>
-              <input data-image type="url" id="imagen" required placeholder="URL de la imagen...">
-            
-  
-              <div class="btn-form">
-                  <button type="submit" id="agregar">Agregar</button>
-                  <button type="button" id="limpiar">Limpiar</button>
-              </div>
-          </form>
+        <h2 class="section-title">Agregar Producto</h2>
+        <form id="producto-form" data-form class="product-form">
+          <div class="form-group">
+            <label for="nombre">Nombre del Producto:</label>
+            <input data-name type="text" id="nombre" class="form-control" required placeholder="Ej: Audífonos Bluetooth">
+            <div class="error-container" data-error-for="nombre"></div>
+          </div>
+          
+          <div class="form-group">
+            <label for="precio">Precio:</label>
+            <input data-price type="number" id="precio" class="form-control" required placeholder="Ej: 59.99" min="0" step="0.01">
+            <div class="error-container" data-error-for="precio"></div>
+          </div>
+          
+          <div class="form-group">
+            <label for="imagen">URL de la Imagen:</label>
+            <input data-image type="url" id="imagen" class="form-control" required placeholder="https://ejemplo.com/imagen.jpg">
+            <div class="error-container" data-error-for="imagen"></div>
+          </div>
+          
+          <div class="btn-form">
+            <button type="submit" id="agregar" class="btn btn-primary">
+              <i class="fas fa-plus"></i> Agregar Producto
+            </button>
+            <button type="button" id="limpiar" class="btn btn-secondary">
+              <i class="fas fa-broom"></i> Limpiar
+            </button>
+          </div>
+        </form>
       </div>
-  </section>
+    </section>
   </main>
+  
   <footer>
     <div class="footer-container">
-      <p>&copy; 2024 Alura Geek. Todos los derechos reservados.</p>
-      <ul class="social-links">
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Instagram</a></li>
+      <div class="footer-logo">
+        <i class="fas fa-graduation-cap"></i>
+        <span>Edukuk</span>
+      </div>
+      
+      <ul class="footer-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Sobre Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
       </ul>
+      
+      <ul class="social-links">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+      
+      <p class="copyright">&copy; 2024 Edukuk. Todos los derechos reservados.</p>
     </div>
   </footer>
-
   <script type="module" src="js/controllers/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
